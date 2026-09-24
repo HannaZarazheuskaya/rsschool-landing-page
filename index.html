@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="header-menu">
+            <a class="logo" href="index.html">
+                <div class="logo-container">
+                    <img class="layer-background-circle" src="assets/logo/Ellipse 4.png" alt="Logo background circle">
+                    <img class="layer-resource" src="assets/logo/Resource.png" alt="Logo text">
+                    <img class="layer-coffe-house" src="assets/logo/Coffee House.png" alt="Coffee house">
+                </div>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="menu-item" href="#favorite-coffee">Favorite coffee</a></li>
+                    <li><a class="menu-item" href="#about">About</a></li>
+                    <li><a class="menu-item" href="#mobile-app">Mobile app</a></li>
+                    <li><a class="menu-item" href="#contacts">Contact us</a></li>
+                    <li><a class="coffee-menu" href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-switch" type="button" aria-label="Theme switch">
+                    <span class="theme-circle"></span>
+
+                    <span class="theme-icon">
+                        <img class="icon-sun" src="assets/links-and-buttons/Sun.png" alt="Light theme">
+                        <img class="icon-moon" src="assets/links-and-buttons/Moon.svg" alt="Dark theme">
+                    </span>
+                </button>
+
+                <button class="coffee-menu" type="button" aria-label="Open menu" id="coffee-menu" >
+                    <span class="coffee-menu-text">Menu</span>
+                    <div class="coffee-cup">
+                        <img src="assets/menu-cup/VectorCupHandle.png" class="layer" alt="Cup handle">
+                        <img src="assets/menu-cup/VectorSteam2.png" alt="Cup steam">
+                        <img src="assets/menu-cup/VectorSteam1.png" alt="Cup steam">
+                        <img src="assets/menu-cup/VectorCup.png" alt="Cup">
+                    </div>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Enjoy premium coffee at our charming cafe</h1>
+                <p class="">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                <a href="menu.html" class="button-primary">Menu</a>
+            </div>
+        </section>
+
+
+        <section class="favorite-coffee" id="favorite-coffee">
+            <div class="favorite-coffee-container">
+                <h2>Choose your <em>favorite</em> coffee</h2>
+
+                <div class="slider-container">
+
+                    <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous slide">
+                        <img src="assets/links-and-buttons/button-slider-back.png" alt="Previous">
+                    </button>
+                
+                    <div class="slider-wrapper">
+                        <div class="slide slide-active">
+                            <img class="slide-img" src="assets/coffee-slider/coffee-slider-1.png" alt="Coffee Slider 1 Frappuccino">
+                            <div class="slide-text">
+                                <h3>S’mores Frappuccino</h3>
+                                <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                <p class="slide-price">$5.50</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img class="slide-img" src="assets/coffee-slider/coffee-slider-2.png" alt="Coffee Slider 2 Caramel Macchiato">
+                            <div class="slide-text">
+                                <h3>Caramel Macchiato</h3>
+                                <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                <p class="slide-price">$5.00</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/coffee-slider/coffee-slider-3.png" class="slide-img" alt="Coffee Slider 3 Ice coffee">
+                            <div class="slide-text">
+                                <h3>Ice Coffee</h3>
+                                <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                <p class="slide-price">$4.50</p>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <button class="slider-btn next-btn" id="nextBtn" aria-label="Next slide">
+                        <img src="assets/links-and-buttons/button-slider-next.png" alt="Next">
+                    </button>
+                </div>
+
+                <div class="slider-controls">
+                    <span class="dot dot-active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2>Resource is the perfect and cozy place where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+                <div class="about-images">
+                    <img src="assets/about-1.jpg" alt="About cafe picture 1">
+                    <img src="assets/about-2.jpg" alt="About cafe picture 2">
+                    <img src="assets/about-3.jpg" alt="About cafe picture 3">
+                    <img src="assets/about-4.jpg" alt="About cafe picture 4">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="mobile-app">
+            <div class="container">
+                <div class="app-row">
+                    <div class="offer">
+                        <h2 class="offer-title"><em>Download</em> our app to start ordering</h2>
+                        <p class="app-text">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are.</p>
+                        <div class="app-buttons">
+                            <a class="button-app" id="button-app-store" href="https://www.apple.com/app-store/">
+                                <span class="store-label">
+                                    <small>Available on the</small>
+                                    App store
+                                </span>
+                            </a>
+                            <a class="button-app" id="button-google-play" href="https://play.google.com/store">
+                                <span class="store-label">
+                                    <small>Available on</small>
+                                    Google Play
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <img class="mobile-screens" src="assets/mobile-screens.png" alt="Two phones displaying the application">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-left">
+                <h2>Sip, Savor, Smile. <em>It’s coffee time!</em></h2>
+                <ul class="socials">
+                    <li>
+                        <a href="https://x.com/" class="socials-btn" target="_blank">
+                            <img src="assets/socials/twitter.png" class="socials-btn-icon" alt="Twitter">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/" class="socials-btn" target="_blank">
+                            <img src="assets/socials/instagram.png" class="socials-btn-icon" alt="Instagram">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/" class="socials-btn" target="_blank">
+                            <img src="assets/socials/facebook.png" class="socials-btn-icon" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-right">
+                <h3 class="contacts-title">Contact us</h3>
+                <ul class="contacts-list">
+                    <li>
+                        <address class="contacts-text">8558 Green Rd., LA</address>
+                    </li>
+                    <li>
+                        <a class="contacts-link" href="tel:+16035550123">+16035550123</a>
+                    </li>
+                    <li>
+                        <p class="contacts-text">Mon–Sat: 9:00–23:00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+
+</body>
+</html>
